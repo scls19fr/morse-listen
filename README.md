@@ -9,3 +9,7 @@ http://docs.scipy.org/doc/scipy-0.13.0/reference/generated/scipy.signal.firwin.h
 http://docs.scipy.org/doc/scipy-0.13.0/reference/generated/scipy.signal.get_window.html#scipy.signal.get_window
 
 https://github.com/covertcodes/cwtoolkit
+
+https://github.com/krillr/cw-decoding-challenge/blob/master/morse.py
+
+http://morsecode.scphillips.com/labs/decoder/
