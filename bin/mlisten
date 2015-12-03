@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Some code to read Morse code wav file
+
+Copyright (C) 2015 by
+Sébastien Celles <s.celles@gmail.com>
+All rights reserved.
+
+"""
+
+import argparse
+
+import matplotlib.pyplot as plt
+import scipy
+import scipy.io.wavfile
+import pandas as pd
+
+#import morse_talk as mtalk
+#import morse_talk.plot as mplot
+#from morse_talk.utils import WORD
+#from morse_talk.utils import display, _get_speed
+
+def main():
+    parser = argparse.ArgumentParser(prog="mlisten", description='Read morse code')
+    parser.add_argument('-i', '--input', help="Filename of input", default='samples/out.wav')
+    args = parser.parse_args()
+
+    filename = args.input
+    a = scipy.io.wavfile.read(filename)
+    print(a)
+    
+    plt.plot(a[1])
+    plt.show()
+
+if __name__ == '__main__':
+    main()
