@@ -12,6 +12,7 @@ All rights reserved.
 
 import argparse
 
+import numpy as np
 import matplotlib.pyplot as plt
 import scipy
 import scipy.io.wavfile
@@ -28,10 +29,12 @@ def main():
     args = parser.parse_args()
 
     filename = args.input
-    a = scipy.io.wavfile.read(filename)
-    print(a)
-    
-    plt.plot(a[1])
+    framerate, y = scipy.io.wavfile.read(filename)
+    y = y[:, 0] # 1 channel 
+    y = y / np.max(y)
+    t = np.arange(len(y)) / framerate
+
+    plt.plot(t, y)
     plt.show()
 
 if __name__ == '__main__':
