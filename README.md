@@ -13,3 +13,5 @@ https://github.com/covertcodes/cwtoolkit
 https://github.com/krillr/cw-decoding-challenge/blob/master/morse.py
 
 http://morsecode.scphillips.com/labs/decoder/
+
+http://ag1le.blogspot.fr/2015/11/creating-training-material-for.html
