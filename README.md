@@ -22,6 +22,10 @@ see:
 
 - https://github.com/Morse-Learning-Machine-Challenge/
 
+- https://github.com/ag1le/morse.py
+
+- https://github.com/ag1le/LSTM_morse
+
 see also:
 
 - https://github.com/morse-talk/morse-talk
